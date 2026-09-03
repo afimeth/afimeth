@@ -19,7 +19,7 @@ from the interface to the data schema, from business logic to test coverage.
 
 ## What I'm working on
 
-- **[farket](https://github.com/afimeth/farket)** — a dating app where you earn someone's attention through a quiz they wrote themselves. Android client (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS policies, 300+ pgTAP tests). In beta.
+- **[farket](https://github.com/afimeth/farket)** — a dating app where you earn someone's attention through a quiz they wrote themselves. Android client (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS policies, 300+ pgTAP tests). Core product logic and security hardening are done; demoable end-to-end on an emulator. Moving to real infrastructure (cloud, SMS) is next.
 - **gunluk-app** — a local-first journaling app; data stays on-device by default, with an optional end-to-end encrypted cloud backup. Building an on-device AI companion feature (flutter_gemma). Flutter/Dart. *(repo currently private; will open once ready)*
 - **easym3u** — a local tool that plays a pasted M3U/Xtream playlist in the browser with zero setup. Python (standard library only) proxy server + hls.js/mpegts.js playback engine; verified against a real 55,754-channel list. *(private)*
 - **spacework** — a workspace UI made of dockable panels and a node-based flow; React + TypeScript, built on dockview-react and reactflow. Early stage. *(private)*

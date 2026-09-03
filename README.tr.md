@@ -19,7 +19,7 @@ geliştiriyorum — arayüzden veri şemasına, iş mantığından test kapsamı
 
 ## Şu an üzerinde çalıştığım
 
-- **[farket](https://github.com/afimeth/farket)** — kimliğin, karşındaki kişinin kendi yazdığı bir quizle kazanıldığı bir tanışma uygulaması. Android istemci (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS politikaları, 300+ pgTAP testi). Beta aşamasında.
+- **[farket](https://github.com/afimeth/farket)** — kimliğin, karşındaki kişinin kendi yazdığı bir quizle kazanıldığı bir tanışma uygulaması. Android istemci (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS politikaları, 300+ pgTAP testi). Ürün mantığı ve güvenlik sıkılaştırması bitti; emülatörde uçtan uca demo edilebilir durumda. Sırada gerçek altyapıya (bulut, SMS) geçiş var.
 - **gunluk-app** — yerel-öncelikli bir günlük uygulaması; veriler varsayılan olarak cihazda kalıyor, isteğe bağlı uçtan uca şifreli bulut yedeği var. Cihaz-üstü bir dil modeliyle (flutter_gemma) çalışan bir yapay zekâ arkadaş özelliği geliştiriliyor. Flutter/Dart. *(repo şu an özel; hazır olunca herkese açılacak)*
 - **easym3u** — yapıştırılan bir M3U/Xtream playlist'ini kurulum gerektirmeden tarayıcıda oynatan yerel bir araç. Python (yalnızca standart kütüphane) proxy sunucusu + hls.js/mpegts.js oynatma motoru; gerçek bir 55.754 kanallık liste ile doğrulandı. *(özel)*
 - **spacework** — dockable panel'lerden ve node tabanlı bir akıştan oluşan bir çalışma alanı arayüzü; React + TypeScript, dockview-react ve reactflow üzerine kuruluyor. Erken aşamada. *(özel)*
