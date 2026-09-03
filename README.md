@@ -1,37 +1,39 @@
 <div align="center">
 
+🇬🇧 English · [🇹🇷 Türkçe](README.tr.md)
+
 # Anıl Dondurmacı
 
 **Vibecoder · Full-Stack Systems Engineer**
 
-Yapay zekâ destekli bir iş akışıyla mobil ve web uygulamalarını uçtan uca
-geliştiriyorum — arayüzden veri şemasına, iş mantığından test kapsamına kadar.
+I build mobile and web applications end-to-end with an AI-assisted workflow —
+from the interface to the data schema, from business logic to test coverage.
 
 [![GitHub](https://img.shields.io/badge/GitHub-afimeth-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/afimeth)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Arif%20An%C4%B1l%20Dondurmac%C4%B1-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/)
-[![E-posta](https://img.shields.io/badge/E--posta-anildondurmaci2%40gmail.com-0f6e5f?style=flat-square&logo=gmail&logoColor=white)](mailto:anildondurmaci2@gmail.com)
+[![Email](https://img.shields.io/badge/Email-anildondurmaci2%40gmail.com-0f6e5f?style=flat-square&logo=gmail&logoColor=white)](mailto:anildondurmaci2@gmail.com)
 
 </div>
 
 ---
 
-## Şu an üzerinde çalıştığım
+## What I'm working on
 
-- **[farket](https://github.com/afimeth/farket)** — kimliğin, karşındaki kişinin kendi yazdığı bir quizle kazanıldığı bir tanışma uygulaması. Android istemci (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS politikaları, 300+ pgTAP testi). Beta aşamasında.
-- **gunluk-app** — yerel-öncelikli bir günlük uygulaması; veriler varsayılan olarak cihazda kalıyor, isteğe bağlı uçtan uca şifreli bulut yedeği var. Cihaz-üstü bir dil modeliyle (flutter_gemma) çalışan bir yapay zekâ arkadaş özelliği geliştiriliyor. Flutter/Dart. *(repo şu an özel; hazır olunca herkese açılacak)*
-- **easym3u** — yapıştırılan bir M3U/Xtream playlist'ini kurulum gerektirmeden tarayıcıda oynatan yerel bir araç. Python (yalnızca standart kütüphane) proxy sunucusu + hls.js/mpegts.js oynatma motoru; gerçek bir 55.754 kanallık liste ile doğrulandı. *(özel)*
-- **spacework** — dockable panel'lerden ve node tabanlı bir akıştan oluşan bir çalışma alanı arayüzü; React + TypeScript, dockview-react ve reactflow üzerine kuruluyor. Erken aşamada. *(özel)*
-- **superlaw** — hukuk alanına yönelik bir uygulama için atılmış ilk iskelet. Erken kavram aşamasında. *(özel)*
+- **[farket](https://github.com/afimeth/farket)** — a dating app where you earn someone's attention through a quiz they wrote themselves. Android client (Kotlin, Jetpack Compose) + Supabase backend (PostgreSQL, RLS policies, 300+ pgTAP tests). In beta.
+- **gunluk-app** — a local-first journaling app; data stays on-device by default, with an optional end-to-end encrypted cloud backup. Building an on-device AI companion feature (flutter_gemma). Flutter/Dart. *(repo currently private; will open once ready)*
+- **easym3u** — a local tool that plays a pasted M3U/Xtream playlist in the browser with zero setup. Python (standard library only) proxy server + hls.js/mpegts.js playback engine; verified against a real 55,754-channel list. *(private)*
+- **spacework** — a workspace UI made of dockable panels and a node-based flow; React + TypeScript, built on dockview-react and reactflow. Early stage. *(private)*
+- **superlaw** — an early scaffold for a legal-domain application. Early concept stage. *(private)*
 
-## Kullandığım teknolojiler
+## Tech I use
 
-**Mobil**
+**Mobile**
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
 
-**Backend & Veri**
+**Backend & Data**
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
@@ -40,11 +42,11 @@ geliştiriyorum — arayüzden veri şemasına, iş mantığından test kapsamı
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
-**Sistem & Betik**
+**Systems & Scripting**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-## İletişim
+## Contact
 
 - GitHub: [github.com/afimeth](https://github.com/afimeth)
 - LinkedIn: [Arif Anıl Dondurmacı](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/)
-- E-posta: [anildondurmaci2@gmail.com](mailto:anildondurmaci2@gmail.com)
+- Email: [anildondurmaci2@gmail.com](mailto:anildondurmaci2@gmail.com)
