@@ -2,10 +2,13 @@
 
 # Anıl Dondurmacı
 
-Mobil ve web uygulamalarını uçtan uca geliştiriyorum — arayüzden veri şemasına,
-iş mantığından test kapsamına kadar.
+**Vibecoder · Full-Stack Systems Engineer**
+
+Yapay zekâ destekli bir iş akışıyla mobil ve web uygulamalarını uçtan uca
+geliştiriyorum — arayüzden veri şemasına, iş mantığından test kapsamına kadar.
 
 [![GitHub](https://img.shields.io/badge/GitHub-afimeth-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/afimeth)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arif%20An%C4%B1l%20Dondurmac%C4%B1-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/)
 [![E-posta](https://img.shields.io/badge/E--posta-anildondurmaci2%40gmail.com-0f6e5f?style=flat-square&logo=gmail&logoColor=white)](mailto:anildondurmaci2@gmail.com)
 
 </div>
@@ -43,4 +46,5 @@ iş mantığından test kapsamına kadar.
 ## İletişim
 
 - GitHub: [github.com/afimeth](https://github.com/afimeth)
+- LinkedIn: [Arif Anıl Dondurmacı](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/)
 - E-posta: [anildondurmaci2@gmail.com](mailto:anildondurmaci2@gmail.com)
