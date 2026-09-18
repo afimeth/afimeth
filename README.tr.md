@@ -1,5 +1,7 @@
 # Arif Anıl Dondurmacı
 
+**New4U**'yu geliştiriyorum — [n4u.tech](https://n4u.tech) (Private Preview).
+
 > "I can look at a system, understand how its parts connect, identify where state and authority move, see where it can fail, and design a better execution path."
 
 Birden fazla yapay zekâ modelini belirlenmiş kurallarla koordine etmeyi amaçlayan özel proje New4U / Orkestral üzerinde çalışıyorum.
@@ -22,4 +24,4 @@ Python · TypeScript / React · Kotlin / Jetpack Compose · Flutter / Dart · Po
 
 ## İletişim
 
-[GitHub](https://github.com/afimeth) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [anildondurmaci2@gmail.com](mailto:anildondurmaci2@gmail.com)
+[n4u.tech](https://n4u.tech) · [GitHub](https://github.com/afimeth) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [anildondurmaci2@gmail.com](mailto:anildondurmaci2@gmail.com)
