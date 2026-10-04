@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">Arif Anıl Dondurmacı — Engineering Evidence</title>
+  <desc id="desc">A dark engineering profile banner showing an iceberg-like evidence stack: runnable surface above the line, evals, receipts, provenance, failure boundaries and meaning below it.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#151515"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1c232"/>
+      <stop offset="100%" stop-color="#7a651b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="520" rx="28" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1398" height="518" rx="27" fill="none" stroke="#2a2a2a"/>
+
+  <!-- iceberg / evidence stack -->
+  <g transform="translate(70,48)">
+    <line x1="0" y1="178" x2="520" y2="178" stroke="#d8d8d2" stroke-opacity=".28" stroke-width="2"/>
+    <text x="0" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9b9b94" letter-spacing="2">PUBLIC SURFACE</text>
+
+    <path d="M126 178 L250 34 L374 178 Z" fill="#f1c232"/>
+    <path d="M66 178 L434 178 L370 390 L126 390 Z" fill="url(#ice)" opacity=".88"/>
+
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#0b0b0b" text-anchor="middle">
+      <text x="250" y="120" font-size="24" font-weight="700">RUNNABLE</text>
+      <text x="250" y="148" font-size="18" font-weight="600">SURFACE</text>
+    </g>
+
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#f4f1e8" text-anchor="middle">
+      <text x="250" y="224" font-size="18" font-weight="700">EVALS · FIXTURES</text>
+      <text x="250" y="268" font-size="18" font-weight="700">RECEIPTS · TESTS</text>
+      <text x="250" y="312" font-size="18" font-weight="700">PROVENANCE · LIMITS</text>
+      <text x="250" y="356" font-size="18" font-weight="700">FAILURE BOUNDARIES</text>
+      <text x="250" y="382" font-size="14" fill="#d8d3c4">MEANING / RELATIONS / CAUSALITY</text>
+    </g>
+
+    <!-- topology nodes -->
+    <g stroke="#f1c232" stroke-opacity=".75" stroke-width="2" fill="#101010">
+      <line x1="462" y1="84" x2="500" y2="122"/>
+      <line x1="500" y1="122" x2="474" y2="166"/>
+      <line x1="474" y1="166" x2="512" y2="214"/>
+      <circle cx="462" cy="84" r="7"/>
+      <circle cx="500" cy="122" r="7"/>
+      <circle cx="474" cy="166" r="7"/>
+      <circle cx="512" cy="214" r="7"/>
+    </g>
+  </g>
+
+  <!-- text -->
+  <g transform="translate(650,86)" font-family="Segoe UI, Arial, sans-serif">
+    <text x="0" y="0" font-size="20" fill="#f1c232" font-weight="700" letter-spacing="3">ARIF ANIL DONDURMACI</text>
+    <text x="0" y="54" font-size="42" fill="#f4f1e8" font-weight="700">AI / Agentic Systems</text>
+    <text x="0" y="96" font-size="20" fill="#aaa79f">Founder &amp; Product Architect</text>
+
+    <g transform="translate(0,152)">
+      <text x="0" y="0" font-size="18" fill="#f4f1e8" font-weight="700">Evidence &gt; claims</text>
+      <text x="0" y="38" font-size="18" fill="#f4f1e8" font-weight="700">Runtime &gt; UI</text>
+      <text x="0" y="76" font-size="18" fill="#f4f1e8" font-weight="700">Meaning &gt; implementation</text>
+      <text x="0" y="114" font-size="18" fill="#f4f1e8" font-weight="700">Receipts &gt; screenshots</text>
+    </g>
+
+    <line x1="0" y1="310" x2="610" y2="310" stroke="#2f2f2f"/>
+    <text x="0" y="354" font-size="18" fill="#bdb9ae">Open the mechanism. Let the evidence speak.</text>
+    <text x="0" y="388" font-size="16" fill="#7f7d77">n4u.tech · github.com/afimeth</text>
+  </g>
+</svg>
