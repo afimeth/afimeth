@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iceberg Design System</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface-abyss); color: var(--ink); font: var(--fs-body)/var(--lh-body) var(--font-sans); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: var(--space-7) var(--space-4); }
+  .eyebrow { font-size: var(--fs-small); font-weight: var(--fw-bold); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--signal-text); }
+  .label { font-size: var(--fs-small); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--ink-3); margin: 0 0 var(--space-3); font-weight: var(--fw-medium); }
+  h1 { font-size: var(--fs-display); line-height: var(--lh-tight); margin: var(--space-2) 0; font-weight: var(--fw-bold); }
+  h2 { font-size: var(--fs-title); margin: 0 0 var(--space-2); letter-spacing: var(--track-title); font-weight: var(--fw-medium); }
+  p.lead { font-size: var(--fs-lead); color: var(--ink-3); max-width: 62ch; margin: 0; }
+  section { border-top: 1px solid var(--line); padding: var(--space-6) 0; }
+  .grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .swatch { border: 1px solid var(--line); border-radius: var(--radius-control); overflow: hidden; background: var(--surface-raised); }
+  .swatch i { display: block; height: 56px; }
+  .swatch div { padding: var(--space-2) var(--space-3); font-size: var(--fs-small); }
+  .swatch code { color: var(--ink-faint); font: var(--fs-caption) var(--font-mono); }
+  .card { background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-5); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+  .stack > * + * { margin-top: var(--space-3); }
+
+  /* Components */
+  .btn { font: inherit; cursor: pointer; border: 1px solid var(--line-strong); border-radius: var(--radius-control); background: var(--surface-overlay); color: var(--ink); padding: var(--space-2) var(--space-3); transition: border-color var(--dur) var(--ease); }
+  .btn:hover { border-color: var(--focus); }
+  .btn:focus-visible, .input:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .btn.primary { background: var(--signal); color: var(--signal-ink); border-color: var(--signal); font-weight: var(--fw-medium); }
+  .btn.primary:hover { border-color: var(--ink); }
+  .btn:disabled { opacity: .4; cursor: default; }
+  .input { font: inherit; width: 100%; padding: 11px 12px; border: 1px solid var(--line-strong); background: var(--surface-deep); color: var(--ink); border-radius: var(--radius-control); }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border-radius: var(--radius-badge); background: var(--surface-overlay); color: var(--ink-2); font-size: var(--fs-micro); letter-spacing: .08em; text-transform: uppercase; font-weight: var(--fw-medium); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .metric b { display: block; font-size: 24px; font-weight: var(--fw-medium); color: var(--focus); }
+  .metric span { font-size: var(--fs-caption); color: var(--ink-3); letter-spacing: var(--track-label); }
+  .chain { font-family: var(--font-mono); font-size: var(--fs-small); background: var(--surface-deep); border: 1px solid var(--line); border-radius: var(--radius-control); padding: var(--space-4); color: var(--ink-2); line-height: 1.9; overflow-x: auto; }
+  .chain em { color: var(--signal-text); font-style: normal; }
+  .receipt { border-left: 3px solid var(--ev-receipt); }
+  .receipt .meta { font: var(--fs-caption) var(--font-mono); color: var(--ink-faint); overflow-wrap: anywhere; }
+  .limit { border: 1px dashed var(--line-strong); border-radius: var(--radius-control); padding: var(--space-3); color: var(--ink-3); font-size: var(--fs-small); }
+  .limit strong { color: var(--warn); }
+  .principles { list-style: none; padding: 0; margin: 0; font-size: var(--fs-lead); font-weight: var(--fw-bold); }
+  .principles li { padding: 6px 0; }
+  .principles s { text-decoration: none; color: var(--ink-faint); font-weight: var(--fw-regular); }
+  .hero { border-radius: var(--radius-hero); border: 1px solid var(--line); background: linear-gradient(135deg, var(--surface-abyss), var(--surface-raised)); padding: var(--space-6); display: grid; gap: var(--space-6); grid-template-columns: 180px 1fr; align-items: center; }
+  .waterline { position: relative; height: 150px; }
+  .waterline .tip { position: absolute; left: 30px; top: 0; border-left: 60px solid transparent; border-right: 60px solid transparent; border-bottom: 70px solid var(--signal); }
+  .waterline .body { position: absolute; left: 0; right: 0; top: 70px; height: 80px; background: linear-gradient(var(--signal), var(--signal-deep)); clip-path: polygon(0 0, 100% 0, 82% 100%, 18% 100%); opacity: .88; }
+  .waterline::after { content: ""; position: absolute; left: -10px; right: -10px; top: 70px; border-top: 2px solid color-mix(in srgb, var(--ink-2) 30%, transparent); }
+  .type-row { display: flex; gap: var(--space-4); align-items: baseline; border-bottom: 1px solid var(--line); padding: var(--space-2) 0; }
+  .type-row code { width: 110px; flex-shrink: 0; color: var(--ink-faint); font: var(--fs-caption) var(--font-mono); }
+  @media (max-width: 640px) { .hero { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="waterline" aria-hidden="true"><div class="tip"></div><div class="body"></div></div>
+    <div>
+      <div class="eyebrow">afimeth · Iceberg</div>
+      <h1>Open the mechanism.</h1>
+      <p class="lead">A design system for evidence-first engineering surfaces. The tip is the runnable surface. Everything below the waterline (fixtures, receipts, provenance, limits) gets equal design weight.</p>
+    </div>
+  </header>
+
+  <section>
+    <p class="label">Principles</p>
+    <ul class="principles">
+      <li>Evidence <s>&gt; claims</s></li>
+      <li>Receipts <s>&gt; screenshots</s></li>
+      <li>Explicit limits <s>&gt; polished certainty</s></li>
+      <li>One accent <s>&gt; many accents</s> — signal amber marks the single thing that matters</li>
+      <li>Color encodes evidence class <s>— never decoration</s></li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="label">Core palette</p>
+    <div class="grid">
+      <div class="swatch"><i style="background:var(--surface-abyss)"></i><div>Abyss<br><code>--surface-abyss</code></div></div>
+      <div class="swatch"><i style="background:var(--surface-raised)"></i><div>Raised<br><code>--surface-raised</code></div></div>
+      <div class="swatch"><i style="background:var(--line-strong)"></i><div>Line<br><code>--line-strong</code></div></div>
+      <div class="swatch"><i style="background:var(--ink)"></i><div>Ink<br><code>--ink</code></div></div>
+      <div class="swatch"><i style="background:var(--ink-3)"></i><div>Muted<br><code>--ink-3</code></div></div>
+      <div class="swatch"><i style="background:var(--signal)"></i><div>Signal<br><code>--signal</code></div></div>
+      <div class="swatch"><i style="background:var(--signal-deep)"></i><div>Signal deep<br><code>--signal-deep</code></div></div>
+      <div class="swatch"><i style="background:var(--focus)"></i><div>Focus<br><code>--focus</code></div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Evidence classes</p>
+    <div class="row">
+      <span class="badge"><span class="dot" style="background:var(--ev-concept)"></span>Concept</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-owner)"></span>Owner input</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-synthesis)"></span>Synthesis</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-library)"></span>Library ref</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-receipt)"></span>Receipt</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-source)"></span>Source</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-event)"></span>Event</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-repository)"></span>Repository</span>
+      <span class="badge"><span class="dot" style="background:var(--ev-repo-file)"></span>Repo file</span>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Type</p>
+    <div class="type-row"><code>display 42/700</code><span style="font-size:var(--fs-display);font-weight:700;line-height:1.1">AI / Agentic Systems</span></div>
+    <div class="type-row"><code>title 22/600</code><span style="font-size:var(--fs-title);font-weight:600;letter-spacing:var(--track-title)">PERSONAL ALEXANDRIA</span></div>
+    <div class="type-row"><code>lead 18/700</code><span style="font-size:var(--fs-lead);font-weight:700">Runtime &gt; UI</span></div>
+    <div class="type-row"><code>body 14/400</code><span>Durable state, failure recovery, evals, scoped tools.</span></div>
+    <div class="type-row"><code>label 12 caps</code><span class="label" style="margin:0">Public surface</span></div>
+    <div class="type-row"><code>mono 12</code><span style="font:var(--fs-small) var(--font-mono);color:var(--ink-2)">input -&gt; headless runtime -&gt; output -&gt; receipt</span></div>
+  </section>
+
+  <section>
+    <p class="label">Components · sample data</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-4)">
+      <div class="card stack">
+        <h2>Controls</h2>
+        <input class="input" type="search" placeholder="Search corpus: term, file, source…" aria-label="Search">
+        <div class="row">
+          <button class="btn primary">Run eval</button>
+          <button class="btn">Show all</button>
+          <button class="btn" disabled>Clear</button>
+        </div>
+        <div class="row" style="gap:var(--space-6)">
+          <div class="metric"><b>4,279</b><span>NODES</span></div>
+          <div class="metric"><b>12,804</b><span>EDGES</span></div>
+          <div class="metric"><b>9</b><span>ISLANDS</span></div>
+        </div>
+      </div>
+
+      <div class="card stack receipt">
+        <div class="row"><span class="badge"><span class="dot" style="background:var(--ev-receipt)"></span>Receipt</span><span class="badge" style="color:var(--ok)">Passed</span></div>
+        <h2 style="font-size:var(--fs-lead)">crash-recovery · replay suppressed</h2>
+        <p style="margin:0;color:var(--ink-3)">Dispatch marker survived kill -9; replay of 3 in-flight jobs was suppressed.</p>
+        <div class="meta">sha256 e218f85e…5120 · tests/recovery_test.go#L42</div>
+        <div class="limit"><strong>Limit:</strong> synthetic fixture only. Not measured under network partition.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Pattern · evidence chain</p>
+    <div class="chain"><em>claim</em><br>&nbsp;&nbsp;-&gt; implementation<br>&nbsp;&nbsp;-&gt; fixture / input<br>&nbsp;&nbsp;-&gt; test / eval<br>&nbsp;&nbsp;-&gt; observed output / receipt<br>&nbsp;&nbsp;-&gt; <em>limitation</em></div>
+  </section>
+</div>
+</body>
+</html>

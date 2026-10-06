@@ -1,0 +1,133 @@
+/* Iceberg — afimeth design tokens.
+ * Extracted from assets/profile-evidence-iceberg.svg (brand surface) and
+ * personal-alexandria-transcripts/packages/corpus-atlas (product surface).
+ * Dark is canonical (both sources are dark-only); "paper" light theme is derived.
+ */
+:root {
+  color-scheme: dark;
+
+  /* Surface — banner gradient #0a0a0a → #151515 */
+  --surface-abyss: #0a0a0a;
+  --surface-deep: #101010;
+  --surface-raised: #151515;
+  --surface-overlay: #1c1c1a;
+  --line: #2a2a2a;
+  --line-strong: #3a3935;
+
+  /* Ink — banner text ramp */
+  --ink: #f4f1e8;
+  --ink-2: #d8d3c4;
+  --ink-3: #aaa79f;
+  --ink-faint: #7f7d77;
+
+  /* Signal — the single brand accent */
+  --signal: #f1c232;
+  --signal-deep: #7a651b;
+  --signal-ink: #0b0b0b;           /* text on signal fills */
+  --signal-text: #f1c232;          /* signal used as text */
+
+  /* Interaction — from Corpus Atlas */
+  --focus: #67e8f9;
+  --path: #ffcb73;                 /* active route / owner trace */
+
+  /* Status */
+  --ok: #76efb2;
+  --warn: #ffcb73;
+  --danger: #ff879e;
+  --info: #709cf9;
+
+  /* Evidence classes — Corpus Atlas layer palette */
+  --ev-concept: #67e8f9;
+  --ev-owner: #ffcb73;
+  --ev-synthesis: #c4a4ff;
+  --ev-library: #76efb2;
+  --ev-receipt: #ff879e;
+  --ev-source: #709cf9;
+  --ev-event: #e8e4d6;
+  --ev-repository: #ff9f5d;
+  --ev-repo-file: #70bfcb;
+
+  /* Type */
+  --font-sans: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --fs-micro: 10px;
+  --fs-caption: 11px;
+  --fs-small: 12px;
+  --fs-body: 14px;
+  --fs-lead: 18px;
+  --fs-title: 22px;
+  --fs-display: 42px;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.2;
+  --lh-body: 1.65;
+  --track-label: 0.14em;           /* uppercase eyebrow labels */
+  --track-title: 0.06em;
+
+  /* Space — 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 28px;
+  --space-7: 48px;
+
+  /* Radius */
+  --radius-badge: 5px;
+  --radius-control: 8px;
+  --radius-card: 14px;
+  --radius-hero: 28px;
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --dur: 140ms;
+}
+
+/* Derived light theme ("paper"). Signal keeps its fill role; text uses signal-deep. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --surface-abyss: #f6f3ea;
+    --surface-deep: #fbf9f3;
+    --surface-raised: #ffffff;
+    --surface-overlay: #efebe0;
+    --line: #dedacd;
+    --line-strong: #c9c4b4;
+    --ink: #141414;
+    --ink-2: #33322e;
+    --ink-3: #5e5c55;
+    --ink-faint: #85827a;
+    --signal-text: #7a651b;
+    --focus: #0e7490;
+    --path: #a1620b;
+    --ok: #15803d;
+    --warn: #a1620b;
+    --danger: #be123c;
+    --info: #1d4ed8;
+  --ev-event: #a8a290;
+    --ev-event: #a8a290;
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --surface-abyss: #f6f3ea;
+  --surface-deep: #fbf9f3;
+  --surface-raised: #ffffff;
+  --surface-overlay: #efebe0;
+  --line: #dedacd;
+  --line-strong: #c9c4b4;
+  --ink: #141414;
+  --ink-2: #33322e;
+  --ink-3: #5e5c55;
+  --ink-faint: #85827a;
+  --signal-text: #7a651b;
+  --focus: #0e7490;
+  --path: #a1620b;
+  --ok: #15803d;
+  --warn: #a1620b;
+  --danger: #be123c;
+  --info: #1d4ed8;
+  --ev-event: #a8a290;
+}
