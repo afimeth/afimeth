@@ -1,71 +1,56 @@
+<h1 align="center">Dondi</h1>
+<p align="center">Arif Anıl Dondurmacı · Kurucu &amp; Ürün Mimarı</p>
+<p align="center"><strong>AI sistemleri · Runtime mühendisliği · Geliştirici araçları</strong></p>
 <p align="center">
-  <img src="./assets/profile-evidence-iceberg.svg" alt="Arif Anıl Dondurmacı — AI / Agentic Systems mühendislik kanıt yüzeyi" width="100%" />
+  <a href="https://github.com/afimeth/software-interview-portfolio">Mühendislik portföyü</a> ·
+  <a href="https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md">Değerlendirme ve sınırlar</a> ·
+  <a href="https://afimeth.github.io/design-engineering-product-lab/">Ürün demosu</a> ·
+  <a href="README.md">English</a>
 </p>
 
-# Arif Anıl Dondurmacı
+---
 
-**Founder & Product Architect — AI / Agentic Systems**
+Hata davranışı açık, testleri incelenebilir agent runtime'ları, değerlendirme araçları ve backend iş akışları geliştiriyorum. Odağım; önerilen bir eylem, yürütülen işlem ve sistemin kanıtla destekleyebildiği sonuç arasındaki sınır.
 
-AI sistemlerinde demo bittikten sonra önemli hale gelen katmanlarla ilgileniyorum: dayanıklı state, failure recovery, evals, scoped tools, provenance, routing ve kanıta bağlı execution.
+**AI sistemleri, backend/workflow mühendisliği ve geliştirici araçları alanlarında remote çalışmaya açığım.**
 
-**New4U / Orkestral**'ı özel olarak geliştiriyorum — [n4u.tech](https://n4u.tech).  
-Buradaki public repolar **ürünün kopyası değil**. Bilerek daha küçük ve incelenebilir tutuluyorlar: çalışan mekanizmalar, sentetik fixture'lar, testler, receipt'ler, referanslar ve açık limitation'lar.
+## Seçilmiş mühendislik çalışmaları
 
-> **Mekanizmayı aç. Mitolojiyi değil.**
+| Proje | İncelenebilecek mekanizma |
+|---|---|
+| **[Agent runtime recovery](https://github.com/afimeth/agent-runtime-recovery-lab)** | SQLite üzerinde dispatch durumu, tekrar yürütmenin bastırılması ve belirsiz sonuçların kontrollü ele alınması. |
+| **[Retrieval evaluation](https://github.com/afimeth/evidence-rag-eval-lab)** | Lexical retrieval, kaynağa bağlı atıflar, yanıttan kaçınma ve adversarial değerlendirme fixture'ları. |
+| **[Scoped tool gateway](https://github.com/afimeth/scoped-tool-gateway-lab)** | Tool kapsamı, süre sonu, atomik kullanım bütçesi ve açık ret/audit davranışı. |
+| **[Go workflow runtime](https://github.com/afimeth/workflow-runtime-oss-lab)** | DAG yürütme, sınırlı eşzamanlılık, güvenli retry sözleşmeleri, iptal ve journal recovery. |
+| **[Transactional backend](https://github.com/afimeth/durable-backend-systems-lab)** | Payload'a bağlı idempotency, atomik outbox yazımı ve recovery odaklı backend testleri. |
 
-[English](README.md) · Türkçe
+**[Sekiz lab, sabitlenmiş kaynak sürümleri ve CI kayıtları →](https://github.com/afimeth/software-interview-portfolio/blob/main/PORTFOLIO_INDEX.md)**
 
-## Public evidence
+<details>
+<summary><strong>Ürün sistemleri, arayüz tasarımı ve Web3</strong></summary>
 
-- **[agent-runtime-recovery-lab](https://github.com/afimeth/agent-runtime-recovery-lab)** — durable dispatch marker'ları, konservatif crash recovery ve replay suppression.
-- **[evidence-rag-eval-lab](https://github.com/afimeth/evidence-rag-eval-lab)** — deterministic retrieval eval, citation binding, abstention ve adversarial fixture'lar.
-- **[scoped-tool-gateway-lab](https://github.com/afimeth/scoped-tool-gateway-lab)** — scoped capability gate'leri, expiry, budget, denial audit ve replay testleri.
-- **[workflow-runtime-oss-lab](https://github.com/afimeth/workflow-runtime-oss-lab)** — Go DAG runtime, bounded concurrency, explicit retry semantiği ve journal recovery.
-- **[durable-backend-systems-lab](https://github.com/afimeth/durable-backend-systems-lab)** — transactional idempotency, atomic outbox ve crash-safe backend fixture'ları.
-- **[realtime-product-systems-lab](https://github.com/afimeth/realtime-product-systems-lab)** — async product-state ve realtime davranış.
-- **[solidity-multichain-security-lab](https://github.com/afimeth/solidity-multichain-security-lab)** — Solidity / multichain security fixture'ları ve invariant odaklı testler.
-- **[design-engineering-product-lab](https://github.com/afimeth/design-engineering-product-lab)** — product-facing implementation örneği.
-- **[software-interview-portfolio](https://github.com/afimeth/software-interview-portfolio)** — public lab'ler için engineering evidence index.
+**[Realtime product state](https://github.com/afimeth/realtime-product-systems-lab)** — cursor replay, snapshot recovery ve yavaş tüketiciler için sınırlı kuyruklar.
 
-## Bu repolar nasıl okunmalı
+**[Product interface](https://github.com/afimeth/design-engineering-product-lab)** — tarayıcı etkileşim testleri ve otomatik erişilebilirlik kontrolleri bulunan React/TypeScript session journal. [Demoyu aç](https://afimeth.github.io/design-engineering-product-lab/).
 
-```text
-claim
-  -> implementation
-  -> fixture / input
-  -> test / eval
-  -> observed output / receipt
-  -> limitation
-```
+**[EVM security mechanisms](https://github.com/afimeth/solidity-multichain-security-lab)** — erişim kontrolü, replay domain, slippage, reentrancy ve conservation invariant'ları için yerel Foundry testleri.
 
-README yalnızca iceberg'in üst kısmı. İsteyen engineer fixture'lara, failure case'lere, receipt'lere, provenance'a, chronology'ye ve architecture'a kadar iner.
+**[Coding-agent evaluation fixture](https://github.com/afimeth/software-interview-portfolio/tree/main/evaluator)** — ortak test suite'i üzerinden değerlendirilen hatalı patch'ler, geçerli bir refactor ve eksik specification vakası.
 
-Bir runtime'ın incelenebilir olması için hazır UI şart değil:
+</details>
 
-```text
-input -> headless runtime -> output -> receipt
-```
+## Çalışma yaklaşımım
 
-CLI, IDE, web, desktop veya automation yüzeyi aynı runtime contract'ın farklı projection'ları olabilir.
+**Davranışı tanımla → mekanizmayı uygula → hata durumlarını test et → sonucu incele → sınırı belgele.**
 
-## Çalışma prensipleri
+Python · Go · TypeScript / React · SQLite · Solidity / Foundry
 
-```text
-evidence > claims
-runtime > UI
-meaning > implementation
-receipts > screenshots
-explicit limits > polished certainty
-```
+Public lab'ler sentetik girdilerle geliştirilmiş, AI destekli implementasyonlardır. Her birinde çalıştırma yönergesi ve açık kapsam sınırları bulunur; portföy kaynak sürümlerini ve kayıtlı CI kanıtlarını bağlar. Bunlar somut mühendislik mekanizmalarını gösterir; tek başına production kabulü, bağımsız güvenlik denetimi veya genel benchmark sonucu değildir. [Değerlendirmeyi oku](https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md).
 
-Human input compressed, çok dilli veya informal olabilir. Source meaning korunur; sonra current consumer için en uygun representation'a projection yapılır: English, structured JSON/YAML, Go-like syntax, graph/AST, compact relay language veya model-specific encoding.
+## New4
 
-**One semantic object, many valid encodings.**
+**New4U / Orkestral**'ı özel olarak geliştiriyorum: modeller, araçlar ve yürütme yüzeyleri arasında iş sürekliliğini koruyan bir ortam. Public lab'ler, private ürünü veya korpusunu yayımlamadan seçilmiş mühendislik mekanizmalarını görünür kılar. [n4u.tech](https://n4u.tech)
 
-## Kullandığım araçlar
+---
 
-Python · Go · TypeScript / React · Kotlin / Jetpack Compose · Flutter / Dart · SQLite / PostgreSQL · Docker · local ve cloud model runtime'ları
-
-## İletişim
-
-[n4u.tech](https://n4u.tech) · [GitHub](https://github.com/afimeth) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [Email](mailto:anildondurmaci2@gmail.com)
+**İletişim:** [E-posta](mailto:anildondurmaci2@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [GitHub](https://github.com/afimeth)
