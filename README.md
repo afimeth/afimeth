@@ -1,4 +1,4 @@
-<h1 align="center">Dondi</h1>
+<h1 align="center">DND</h1>
 <p align="center">Arif Anıl Dondurmacı · Founder &amp; Product Architect</p>
 <p align="center"><strong>AI systems · Runtime engineering · Developer tooling</strong></p>
 <p align="center">
