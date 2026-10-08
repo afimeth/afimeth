@@ -1,71 +1,56 @@
+<h1 align="center">Dondi</h1>
+<p align="center">Arif Anıl Dondurmacı · Founder &amp; Product Architect</p>
+<p align="center"><strong>AI systems · Runtime engineering · Developer tooling</strong></p>
 <p align="center">
-  <img src="./assets/profile-evidence-iceberg.svg" alt="Arif Anıl Dondurmacı — AI / Agentic Systems engineering evidence" width="100%" />
+  <a href="https://github.com/afimeth/software-interview-portfolio">Engineering portfolio</a> ·
+  <a href="https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md">Evaluation &amp; limits</a> ·
+  <a href="https://afimeth.github.io/design-engineering-product-lab/">Product demo</a> ·
+  <a href="README.tr.md">Türkçe</a>
 </p>
 
-# Arif Anıl Dondurmacı
+---
 
-**Founder & Product Architect — AI / Agentic Systems**
+I build agent runtimes, evaluation tools and backend workflows with explicit failure behavior and inspectable tests. My focus is the boundary between a proposed action, an executed operation and a result the system can actually support with evidence.
 
-I work on the parts of AI systems that matter after the demo: durable state, failure recovery, evals, scoped tools, provenance, routing, and evidence-bound execution.
+**Open to remote work in AI systems, backend/workflow engineering and developer tooling.**
 
-I am building **New4U / Orkestral** privately — [n4u.tech](https://n4u.tech).  
-The public repositories here are **not product mirrors**. They are deliberately smaller, inspectable engineering surfaces: runnable mechanisms, synthetic fixtures, tests, receipts, references, and explicit limitations.
+## Selected engineering work
 
-> **Open the mechanism, not the mythology.**
+| Project | Mechanism to inspect |
+|---|---|
+| **[Agent runtime recovery](https://github.com/afimeth/agent-runtime-recovery-lab)** | SQLite-backed dispatch state, replay suppression and conservative handling of uncertain outcomes. |
+| **[Retrieval evaluation](https://github.com/afimeth/evidence-rag-eval-lab)** | Lexical retrieval, source-bound citations, abstention and adversarial evaluation fixtures. |
+| **[Scoped tool gateway](https://github.com/afimeth/scoped-tool-gateway-lab)** | Tool scope, expiry, atomic usage budgets and explicit denial/audit behavior. |
+| **[Go workflow runtime](https://github.com/afimeth/workflow-runtime-oss-lab)** | DAG execution, bounded concurrency, safe-retry contracts, cancellation and journal recovery. |
+| **[Transactional backend](https://github.com/afimeth/durable-backend-systems-lab)** | Payload-bound idempotency, atomic outbox writes and recovery-oriented backend tests. |
 
-English · [Türkçe](README.tr.md)
+**[Browse all eight labs, pinned source revisions and CI runs →](https://github.com/afimeth/software-interview-portfolio/blob/main/PORTFOLIO_INDEX.md)**
 
-## Public evidence
+<details>
+<summary><strong>Product systems, interface design and Web3</strong></summary>
 
-- **[agent-runtime-recovery-lab](https://github.com/afimeth/agent-runtime-recovery-lab)** — durable dispatch markers, conservative crash recovery, replay suppression.
-- **[evidence-rag-eval-lab](https://github.com/afimeth/evidence-rag-eval-lab)** — deterministic retrieval evaluation, citation binding, abstention and adversarial fixtures.
-- **[scoped-tool-gateway-lab](https://github.com/afimeth/scoped-tool-gateway-lab)** — scoped capability gates, expiry, budgets, denial audit and replay tests.
-- **[workflow-runtime-oss-lab](https://github.com/afimeth/workflow-runtime-oss-lab)** — Go DAG runtime, bounded concurrency, explicit retry semantics and journal recovery.
-- **[durable-backend-systems-lab](https://github.com/afimeth/durable-backend-systems-lab)** — transactional idempotency, atomic outbox behavior and crash-safe backend fixtures.
-- **[realtime-product-systems-lab](https://github.com/afimeth/realtime-product-systems-lab)** — async product-state and realtime behavior.
-- **[solidity-multichain-security-lab](https://github.com/afimeth/solidity-multichain-security-lab)** — Solidity / multichain security fixtures and invariant-oriented tests.
-- **[design-engineering-product-lab](https://github.com/afimeth/design-engineering-product-lab)** — product-facing implementation example.
-- **[software-interview-portfolio](https://github.com/afimeth/software-interview-portfolio)** — engineering evidence index across the public labs.
+**[Realtime product state](https://github.com/afimeth/realtime-product-systems-lab)** — cursor replay, snapshot recovery and bounded slow-consumer queues.
 
-## How I want these repositories read
+**[Product interface](https://github.com/afimeth/design-engineering-product-lab)** — a React/TypeScript session journal with browser interaction tests and automated accessibility checks. [Open demo](https://afimeth.github.io/design-engineering-product-lab/).
 
-```text
-claim
-  -> implementation
-  -> fixture / input
-  -> test / eval
-  -> observed output / receipt
-  -> limitation
-```
+**[EVM security mechanisms](https://github.com/afimeth/solidity-multichain-security-lab)** — local Foundry tests for access control, replay domains, slippage, reentrancy and conservation invariants.
 
-The README is only the tip of the iceberg. Engineers can descend into fixtures, failure cases, receipts, provenance, chronology, and architecture as far as useful.
+**[Coding-agent evaluation fixture](https://github.com/afimeth/software-interview-portfolio/tree/main/evaluator)** — controlled broken patches, a valid refactor and an incomplete-specification case, evaluated against a shared test suite.
 
-A runtime does not need a bundled UI to be inspectable:
+</details>
 
-```text
-input -> headless runtime -> output -> receipt
-```
+## How I work
 
-CLI, IDE, web, desktop, and automation surfaces are interchangeable projections over the runtime contract.
+**Define the behavior → implement the mechanism → test failure cases → inspect the result → document the limit.**
 
-## Working principles
+Python · Go · TypeScript / React · SQLite · Solidity / Foundry
 
-```text
-evidence > claims
-runtime > UI
-meaning > implementation
-receipts > screenshots
-explicit limits > polished certainty
-```
+The public labs are implemented, AI-assisted work using synthetic inputs. Each has run instructions and documented boundaries; the portfolio links exact source revisions and recorded CI evidence. They demonstrate bounded engineering mechanisms—not a blanket production, security-audit or benchmark claim. [Read the assessment](https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md).
 
-Human input may be compressed, multilingual, or informal. I prefer preserving source meaning, then projecting it into the representation that best fits the current consumer: English, structured JSON/YAML, Go-like syntax, graph/AST forms, compact relay languages, or model-specific encodings.
+## New4
 
-**One semantic object, many valid encodings.**
+I am developing **New4U / Orkestral** privately: a persistent environment for work across models, tools and execution surfaces. The public labs expose selected engineering mechanisms without publishing the private product or its underlying corpus. [n4u.tech](https://n4u.tech)
 
-## Tools I use
+---
 
-Python · Go · TypeScript / React · Kotlin / Jetpack Compose · Flutter / Dart · SQLite / PostgreSQL · Docker · local and cloud model runtimes
-
-## Contact
-
-[n4u.tech](https://n4u.tech) · [GitHub](https://github.com/afimeth) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [Email](mailto:anildondurmaci2@gmail.com)
+**Contact:** [Email](mailto:anildondurmaci2@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arif-anil-dondurmaci-0a8067160/) · [GitHub](https://github.com/afimeth)
