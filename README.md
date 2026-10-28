@@ -1,6 +1,6 @@
 <h1 align="center">DND</h1>
 <p align="center">Arif Anıl Dondurmacı · Founder &amp; Product Architect</p>
-<p align="center"><strong>AI systems · Runtime engineering · Developer tooling</strong></p>
+<p align="center"><strong>AI systems · Multi-model orchestration · Evidence-bound runtimes</strong></p>
 <p align="center">
   <a href="https://github.com/afimeth/software-interview-portfolio">Engineering portfolio</a> ·
   <a href="https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md">Evaluation &amp; limits</a> ·
@@ -10,7 +10,7 @@
 
 ---
 
-I build agent runtimes, evaluation tools and backend workflows with explicit failure behavior and inspectable tests. My focus is the boundary between a proposed action, an executed operation and a result the system can actually support with evidence.
+I design the frames that let multiple models and agents work as one system; these labs are the mechanisms those frames rest on. I build agent runtimes, evaluation tools and backend workflows with explicit failure behavior and inspectable tests. My focus is the boundary between a proposed action, an executed operation and a result the system can actually support with evidence.
 
 **Open to remote work in AI systems, backend/workflow engineering and developer tooling.**
 
@@ -42,6 +42,8 @@ I build agent runtimes, evaluation tools and backend workflows with explicit fai
 ## How I work
 
 **Define the behavior → implement the mechanism → test failure cases → inspect the result → document the limit.**
+
+Building and running community systems since 2009: forums, P2P nodes, game servers and plugins, now multi-model agent orchestration.
 
 Python · Go · TypeScript / React · SQLite · Solidity / Foundry
 
