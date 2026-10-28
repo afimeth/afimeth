@@ -1,6 +1,6 @@
 <h1 align="center">Dondi</h1>
 <p align="center">Arif Anıl Dondurmacı · Kurucu &amp; Ürün Mimarı</p>
-<p align="center"><strong>AI sistemleri · Runtime mühendisliği · Geliştirici araçları</strong></p>
+<p align="center"><strong>AI sistemleri · Çok modelli orkestrasyon · Kanıta bağlı runtime'lar</strong></p>
 <p align="center">
   <a href="https://github.com/afimeth/software-interview-portfolio">Mühendislik portföyü</a> ·
   <a href="https://github.com/afimeth/software-interview-portfolio/blob/main/EVALUATION.md">Değerlendirme ve sınırlar</a> ·
@@ -10,7 +10,7 @@
 
 ---
 
-Hata davranışı açık, testleri incelenebilir agent runtime'ları, değerlendirme araçları ve backend iş akışları geliştiriyorum. Odağım; önerilen bir eylem, yürütülen işlem ve sistemin kanıtla destekleyebildiği sonuç arasındaki sınır.
+Birden çok model ve agent'ın tek bir sistem gibi çalışmasını sağlayan çerçeveleri tasarlıyorum; bu lab'ler o çerçevelerin dayandığı mekanizmalar. Hata davranışı açık, testleri incelenebilir agent runtime'ları, değerlendirme araçları ve backend iş akışları geliştiriyorum. Odağım; önerilen bir eylem, yürütülen işlem ve sistemin kanıtla destekleyebildiği sonuç arasındaki sınır.
 
 **AI sistemleri, backend/workflow mühendisliği ve geliştirici araçları alanlarında remote çalışmaya açığım.**
 
@@ -42,6 +42,8 @@ Hata davranışı açık, testleri incelenebilir agent runtime'ları, değerlend
 ## Çalışma yaklaşımım
 
 **Davranışı tanımla → mekanizmayı uygula → hata durumlarını test et → sonucu incele → sınırı belgele.**
+
+2009'dan beri topluluk sistemleri kurup işletiyorum: forumlar, P2P düğümleri, oyun sunucuları ve eklentileri, şimdi de çok modelli agent orkestrasyonu.
 
 Python · Go · TypeScript / React · SQLite · Solidity / Foundry
 
